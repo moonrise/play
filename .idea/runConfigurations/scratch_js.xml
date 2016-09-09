@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="scratch.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" path-to-js-file="scratch.js" working-dir="$PROJECT_DIR$/snippets/typescripts">
+    <method />
+  </configuration>
+</component>

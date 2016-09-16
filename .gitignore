@@ -1,4 +1,4 @@
 .idea/workspace.xml
-snippets/typescripts/**/*.js
-snippets/typescripts/**/*.map
+javascript/typescripts/**/*.js
+javascript/typescripts/**/*.map
 node_modules

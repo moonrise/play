@@ -2,11 +2,11 @@
   "name": "buildzip",
   "version": "1.0.0",
   "config": {
-    "zipTargetDirectory": "../out/cisssltest"
+    "zipTargetDirectory": "../../out/cisssltest"
   },
   "scripts": {
     "copy:src": "ncp ./src/ $npm_package_config_zipTargetDirectory",
-    "copy:class": "ncp ../out/production/java/ $npm_package_config_zipTargetDirectory",
+    "copy:class": "ncp ../../out/production/java/ $npm_package_config_zipTargetDirectory",
     "copy:script": "ncp ./cisssltest/ $npm_package_config_zipTargetDirectory",
     "copy:lib": "cpy ./lib/*.jar $npm_package_config_zipTargetDirectory/lib --no-overwrite",
     "zip": "cross-zip $npm_package_config_zipTargetDirectory ./cisssltest.zip",

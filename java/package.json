@@ -1,0 +1,22 @@
+{
+  "name": "buildzip",
+  "version": "1.0.0",
+  "config": {
+    "zipTargetDirectory": "../out/cisssltest"
+  },
+  "scripts": {
+    "copy:src": "ncp ./src/ $npm_package_config_zipTargetDirectory",
+    "copy:class": "ncp ../out/production/java/ $npm_package_config_zipTargetDirectory",
+    "copy:script": "ncp ./cisssltest/ $npm_package_config_zipTargetDirectory",
+    "copy:lib": "cpy ./lib/*.jar $npm_package_config_zipTargetDirectory/lib --no-overwrite",
+    "zip": "cross-zip $npm_package_config_zipTargetDirectory ./cisssltest.zip",
+    "zipit": "npm run copy:src && npm run copy:class && npm run copy:script && npm run copy:lib && npm run zip"
+  },
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "cpy-cli": "^1.0.0",
+    "cross-zip-cli": "^1.0.0",
+    "ncp": "^2.0.0"
+  }
+}

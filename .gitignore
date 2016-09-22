@@ -2,3 +2,4 @@
 javascript/typescripts/**/*.js
 javascript/typescripts/**/*.map
 node_modules
+/out

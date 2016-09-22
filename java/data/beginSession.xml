@@ -1,0 +1,9 @@
+<?xml version="1.1" encoding="utf-8"?>
+<soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archive="http://www.compositesw.com/services/system/admin/archive" xmlns:common="http://www.compositesw.com/services/system/util/common" xmlns:execute="http://www.compositesw.com/services/system/admin/execute" xmlns:resource="http://www.compositesw.com/services/system/admin/resource" xmlns:server="http://www.compositesw.com/services/system/admin/server" xmlns:session="http://www.compositesw.com/services/system/util/session" xmlns:user="http://www.compositesw.com/services/system/admin/user">
+    <soap-env:Body>
+        <session:beginSession>
+            <session:sessionTimeout>300</session:sessionTimeout>
+            <session:sessionName>Manager</session:sessionName>
+        </session:beginSession>
+    </soap-env:Body>
+</soap-env:Envelope>
